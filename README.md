@@ -4,7 +4,9 @@ TKlamp is an integrating sphere lighting tester that measures lumen and lux of a
 
 If you are instead looking for:
 
-TKlamp Tester, check out [website](https://tklamp.co)
+Learn more about TKlamp Flashlight Tester, visit [website](https://tklamp.co).
+
+Purchasing TKlamp Tester, visit [online store](https://www.tklamp.co/order-online).
 
 ## Specifications
 
