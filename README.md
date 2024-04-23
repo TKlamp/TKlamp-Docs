@@ -12,7 +12,7 @@ Purchasing TKlamp Tester, visit [online store](https://www.tklamp.co/order-onlin
 
 The specification is maintained as a Markdown file. 
 1. [User manual]() - How to use TKlamp flashlight tester 
-2. [Specifications]() - Serial data interpretation
+2. [Specifications]() - How to decode serial data 
 
 ## Contributing 
 To make contributions, join [Discord](https://discord.gg/6RaazMqn6W).
