@@ -1,0 +1,43 @@
+# Serial Data Output 
+
+Total length: 3620 byte. 
+- Header 1-16 byte
+- Body 17-3616 byte
+- End 3616-3620 byte
+
+<table>
+  <tr>
+    <th>Byte</th>
+    <td>1-2</td>
+    <td>3-4</td>
+    <td>5-6</td>
+    <td>7-8</td>
+    <td>9-10</td>
+    <td>11-12</td>
+     <td>13-14</td>
+     <td>15-16</td>
+  </tr>
+  <tr>
+    <th>Example</th>
+    <td>aa aa</td>
+    <td>0e 10</td>
+    <td>t1 t2</td>
+    <td>l1 l2</td>
+    <td>a1 a2</td>
+    <td>b1 b2</td>
+     <td>c1 c2</td>
+     <td>56 80</td>
+  </tr>
+  <tr>
+    <th>Meaning</th>
+    <td>Start indicator</td>
+    <td>Data body length (3600 bytes fixed) </td>
+    <td>Sampling time</td>
+    <td>Distance to surface</td>
+    <td>lumen multiples</td>
+    <td>lux multiples</td>
+     <td>candela multiples</td>
+     <td>version</td>
+    
+  </tr>
+</table>
