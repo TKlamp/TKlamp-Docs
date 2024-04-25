@@ -74,8 +74,8 @@ Total length: 3620 byte.
 <table>
   <tr>
     <th>Byte</th>
-    <td>3616,3617</td>
-    <td>3617,3618</td>
+    <td>3617-3618</td>
+    <td>3619-3620</td>
   </tr>
   <tr>
     <th>Example</th>
