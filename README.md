@@ -8,7 +8,7 @@ TKlamp Lighting Testers, visit [website](https://tklamp.co).
 
 Purchasing TKlamp Tester, visit [online store](https://www.tklamp.co/order-online).
 
-TKlamp Flashlight Tester (Data Logging Version) is current under beta. 
+TKlamp Flashlight Tester (Data Logging Version) is currently under beta. 
 
 ## Documentations
 
