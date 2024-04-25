@@ -52,9 +52,9 @@ Total length: 3620 byte.
   </tr>
   <tr>
     <th>Example</th>
-    <td>aa aa</td>
-    <td>0e 10</td>
-    <td>t1 t2</td>
+    <td>aa aa ... 00 00 </td>
+    <td>aa aa ... 00 00 </td>
+    <td>aa aa ... 00 00</td>
   </tr>
   <tr>
     <th>Explanation</th>
