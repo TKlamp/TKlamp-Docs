@@ -1,6 +1,6 @@
 # TKlamp Lighting Tester Protocol
 
-TKlamp is an integrating sphere lighting tester that measures lumen and lux. This repository contains the data logging tutorial, user manual and specifications for serial data on PC. 
+TKlamp Flashlight Testers are ingetrating sphere meters that measures lumen and lux. TKlamp 2303E model supports data logging to PC. This repository contains the data logging tutorial, user manual and serial data specifications for TKlamp 2303E. 
 
 If you are instead looking for:
 
