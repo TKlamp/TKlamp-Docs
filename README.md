@@ -11,8 +11,8 @@ Purchasing TKlamp Tester, visit [online store](https://www.tklamp.co/order-onlin
 ## Documentations
 
 The specification is maintained as a Markdown file. 
-1. [Data logging tutorial]() - How to log TKlamp flashlight tester data on PC
-2. [User manual]() 
+1. [Data Logging Tutorial]() - How to log TKlamp flashlight tester data on PC
+2. [User Manual]() 
 3. [Serial Data Specifications](docs/serialoutput.mkd) - Serial data explained. For reading data directly from UBS serial port.
 
 ## Contributing 
