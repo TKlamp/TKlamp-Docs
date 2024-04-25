@@ -17,4 +17,5 @@ The specification is maintained as a Markdown file.
 
 ## Contributing 
 To make contributions, join [Discord](https://discord.gg/6RaazMqn6W).
+
 To suggest any changes in the repos, use pull request or Discord.
