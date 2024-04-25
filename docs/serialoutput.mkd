@@ -1,5 +1,7 @@
 # Serial Data Output 
 
+> Use this specification as a reference to decode serial data if you choose to read data directly from USB serial port or 3rd party application such as CoolTerm. 
+
 Total length: 3620 byte. 
 - Header: 1-16 byte
 - Body: 17-3616 byte
