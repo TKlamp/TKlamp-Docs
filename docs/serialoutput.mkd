@@ -1,9 +1,9 @@
 # Serial Data Output 
 
 Total length: 3620 byte. 
-- Header 1-16 byte
-- Body 17-3616 byte
-- End 3616-3620 byte
+- Header: 1-16 byte
+- Body: 17-3616 byte
+- End: 3616-3620 byte
 
 <table>
   <tr>
@@ -29,15 +29,14 @@ Total length: 3620 byte.
      <td>56 80</td>
   </tr>
   <tr>
-    <th>Meaning</th>
+    <th>Explanation</th>
     <td>Start indicator</td>
     <td>Data body length (3600 bytes fixed) </td>
     <td>Sampling time</td>
     <td>Distance to surface</td>
-    <td>lumen multiples</td>
-    <td>lux multiples</td>
-     <td>candela multiples</td>
-     <td>version</td>
-    
+    <td>Lumen multiples</td>
+    <td>Lux multiples</td>
+    <td>Candela multiples</td>
+    <td>Version</td>
   </tr>
 </table>
