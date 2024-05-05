@@ -48,7 +48,8 @@ Total length: 3620 byte.
 
 ### Body 
 - Each sample point consists of 2 bytes, such as ```2a 93``` . 
-- Max sampling points are 600. Therefore, lumen, candela and lux each has 600 * 2 = 1200 bytes total. 
+- Max sampling points are 600. Therefore, lumen, candela and lux each has 600 * 2 = 1200 bytes total.
+  
 <table>
   <tr>
     <th>Byte position</th>
