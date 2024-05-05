@@ -69,7 +69,8 @@ Total length: 3620 byte.
     <td>Candela (each data point is 2 bytes) </td>
   </tr>
 </table>
-44 0 0 0 76 0
+
+
 - TK2303 tester can take 600 max sample points. Each sample point consists of 2 bytes.
 - Lumen, Lux and Candela each has 1200 bytes data total. 
 - Data persist time ascending order.
