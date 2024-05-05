@@ -12,8 +12,8 @@ Purchasing TKlamp Tester, visit [online store](https://www.tklamp.co/order-onlin
 
 The specification is maintained as a Markdown file. 
 1. [Data Logging Tutorial]() - How to export measurement data from TKlamp flashlight tester to PC.
-2. [User Manual]() 
-3. [Serial Data Specifications](docs/serialoutput.mkd) - How to interprent raw serial data from UBS serial port.
+2. [User Manual](docs/manual.mkd) 
+3. [Serial Data Specifications](docs/serial_data_reference.mkd) - How to interprent raw serial data from UBS serial port.
 
 ## Contributing 
 To make contributions, join [Discord](https://discord.gg/6RaazMqn6W).
