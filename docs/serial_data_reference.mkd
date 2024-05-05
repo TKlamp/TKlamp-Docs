@@ -2,11 +2,11 @@
 
 > This reference is created for decoding raw serial data read directly from USB serial port or 3rd party application such as CoolTerm.
 
-To see a sample raw serial data output, click [here](https://github.com/TKlamp/TKlamp-Protocol/blob/main/docs/raw_serial_data_example.txt). 
+To see a sample raw serial data output, click [here](https://github.com/TKlamp/TKlamp-Protocol/blob/main/docs/raw_serial_data_example.txt). The same data is used for the examples below. 
 
 Total length: 3620 byte. 
-- Header: 1-16 byte
-- Body: 17-3616 byte
+- Header: 1-16 byte 
+- Body: 17-3616 byte 
 - Endding: 3616-3620 byte
 
 ### Header 
@@ -26,12 +26,12 @@ Total length: 3620 byte.
     <th>Example data</th>
     <td>aa aa</td>
     <td>0e 10</td>
-    <td>t1 t2</td>
-    <td>l1 l2</td>
-    <td>a1 a2</td>
-    <td>b1 b2</td>
-    <td>c1 c2</td>
-    <td>56 80</td>
+    <td>01 f4</td>
+    <td>00 64</td>
+    <td>00 01</td>
+    <td>00 01</td>
+    <td>00 01</td>
+    <td>56 44</td>
   </tr>
   <tr>
     <th>Explanation</th>
@@ -58,9 +58,9 @@ Total length: 3620 byte.
   </tr>
   <tr>
     <th>Example data</th>
-    <td>aa aa .. .. 00 00 </td>
-    <td>aa aa .. .. 00 00 </td>
-    <td>aa aa .. .. 00 00</td>
+    <td>44 00 .. .. 00 00 </td>
+    <td>00 00 .. .. 00 00 </td>
+    <td>75 00 .. .. 00 00</td>
   </tr>
   <tr>
     <th>Explanation</th>
@@ -69,7 +69,7 @@ Total length: 3620 byte.
     <td>Candela (each data point is 2 bytes) </td>
   </tr>
 </table>
-
+44 0 0 0 76 0
 - TK2303 tester can take 600 max sample points. Each sample point consists of 2 bytes.
 - Lumen, Lux and Candela each has 1200 bytes data total. 
 - Data persist time ascending order.
