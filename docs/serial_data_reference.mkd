@@ -40,8 +40,8 @@ Total length: 3620 byte.
     <td>Sampling time</td>
     <td>Distance to surface</td>
     <td>Lumen multiples</td>
-    <td>Lux multiples</td>
     <td>Candela multiples</td>
+    <td>Lux multiples</td>
     <td>Version</td>
   </tr>
 </table>
