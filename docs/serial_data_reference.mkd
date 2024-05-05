@@ -84,7 +84,7 @@ Total length: 3620 byte.
   <tr>
     <th>Example data</th>
     <td>ee ee</td>
-    <td>00 00 </td>
+    <td>1a b0</td>
   </tr>
   <tr>
     <th>Explanation</th>
