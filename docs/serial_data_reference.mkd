@@ -2,14 +2,12 @@
 
 > This reference is created for decoding raw serial data read directly from USB serial port or 3rd party application such as CoolTerm.
 
-To see a sample raw serial data output, click here. 
+To see a sample raw serial data output, click [here](https://github.com/TKlamp/TKlamp-Protocol/blob/main/docs/raw_serial_data_example.txt). 
 
 Total length: 3620 byte. 
 - Header: 1-16 byte
 - Body: 17-3616 byte
 - Endding: 3616-3620 byte
-
-- Each data point is represented in 2 bytes hexadecimal, such as ```2a 93``` . 
 
 ### Header 
 <table>
@@ -49,6 +47,8 @@ Total length: 3620 byte.
 </table>
 
 ### Body 
+- Each sample point consists of 2 bytes, such as ```2a 93``` . 
+- Max sampling points are 600. Therefore, lumen, candela and lux each has 600 * 2 = 1200 bytes total. 
 <table>
   <tr>
     <th>Byte position</th>
