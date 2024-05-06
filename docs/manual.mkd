@@ -12,7 +12,7 @@
 - On home screen and live plotting screen: 1lm/1cd/1lux
 - Saved log data: 1lm. cd/lux x1/x10/x100 based on setting of multiples. 
 
-Choose candela/lux multiples according to the estimated measurement value in setting page:
+Select candela/lux multiples in settings based on the estimated value:
 - cd/lux < 65,535:  select x1. (Max value: 65,535. Resolution 1 cd/lux)
 - 65,535 ≤ cd/lux < 655,350: select x10 resolution (Max value: 655,350. Resolution 10 cd/lux )
 - cd/lux ≥ 655,350: select x100 resolution (Max value: 6,553,500. Resolution 100 cd/lux)
