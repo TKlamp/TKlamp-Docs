@@ -1,4 +1,4 @@
-# TKlamp Lighting Tester
+# TKlamp Lighting Tester Docs
 
 TKlamp Lighting Testers are ingetrating sphere meters designed to measure lumen and lux values. The TK2303E model offers data logging capabilities, allowing transfer of measurements to a PC for further analysis.
 
