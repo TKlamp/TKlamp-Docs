@@ -2,7 +2,7 @@
 
 > This reference is created for decoding raw serial data read directly from USB serial port or 3rd party application such as CoolTerm.
 
-To see a sample serial data output, click [here](https://github.com/TKlamp/TKlamp-Protocol/blob/main/docs/raw_serial_data_example.txt). This same data is used in the examples below. 
+To see a sample serial data output, click [here](https://github.com/TKlamp/TKlamp-Protocol/blob/main/docs/raw_serial_data_example.txt). The same data is used in the examples below. 
 
 Total length: **3620 byte** 
 - Header: 1-16 byte 
