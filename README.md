@@ -17,6 +17,6 @@ Purchasing TKlamp Tester, visit [online store](https://www.tklamp.co/order-onlin
 3. [Serial Data Specifications](docs/serial_data_reference.mkd) - How to interprent raw serial data from UBS serial port.
 
 ## Contributing 
-To make contributions, join [Discord](https://discord.gg/6RaazMqn6W).
+To make contributions, join [Discord](https://discord.gg/xVy4j9JcYx).
 
 To suggest any changes in the repos, use pull request or Discord.
