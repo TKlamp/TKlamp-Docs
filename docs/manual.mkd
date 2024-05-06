@@ -25,9 +25,9 @@ Select candela/lux multiples in settings based on estimated value:
 - Maximum logging time: 600 mins (10 hrs)
 
 ### Lux Measurement
-Lux measurement range: 1-10m
-External lux sensor cable length: 2m
-Lux sensor cable extesion cable length: 10m (Not included. Can be purchased separately) 
+- Lux measurement range: 1-10m
+- External lux sensor cable length: 2m
+- Lux sensor cable extesion cable length: 10m (Not included. Can be purchased separately) 
 
 ### Data Logging and Transfer
 - Data length: 3620 bytes
