@@ -1,1 +1,56 @@
-tba
+## Specifications
+
+### Measurements & Range
+- Luminous flux. Range: 0-25,000 lm
+- Luminous intensity. Range: 0-6,500,000 cd 
+- Illuminance. Range: 0~250,000 lux 
+
+### Measurement sampling time interval
+- Measurement sampling time interval: 150ms. Sampling rate is 6.6 times per second.
+
+### Resolution
+- On home screen and live plotting screen: 1lm/1cd/1lux
+- Saved log data: 1lm. cd/lux x1/x10/x100 based on setting of multiples. 
+
+Choose candela/lux multiples according to the estimated measurement value in setting page:
+- cd/lux < 65,535:  select x1. (Max value: 65,535. Resolution 1 cd/lux)
+- 65,535 ≤ cd/lux < 655,350: select x10 resolution (Max value: 655,350. Resolution 10 cd/lux )
+- cd/lux ≥ 655,350: select x100 resolution (Max value: 6,553,500. Resolution 100 cd/lux)
+
+> This is because log data is stored and transferred in 2 bytes, which can only hold up to 65,535 in value.
+
+### Live Plotting
+- Lumen/Candela/Lux each has 600 sampling data points. 
+- Sampling time: adjustable between 0.2s - 60.0s
+- Maximum logging time: 600 mins (10 hrs)
+
+### Lux Measurement
+Lux measurement range: 1-10m
+External lux sensor cable length: 2m
+Lux sensor cable extesion cable length: 10m (Not included. Can be purchased separately) 
+
+### Data Logging and Transfer
+- Data length: 3620 bytes
+- Data transfer time: around 5s
+- Cmmunication Interface: RS485 USB
+
+### Timer
+- Up timer: up to 24 hours
+- Down timer: 1-999 minutes  
+
+### Power Supply
+- Power consumption: < 4w
+- AC power/DC power
+- AC power range: 90~240V 
+- DC power range: 5~24V
+
+### Dimensions 
+- Sphere openning sizes: 0.7", 1.5", 2.9"
+- Sphere diameter: 6.29"
+
+
+
+
+
+
+
