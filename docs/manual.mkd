@@ -48,6 +48,13 @@ Lux sensor cable extesion cable length: 10m (Not included. Can be purchased sepa
 - Sphere openning sizes: 0.7", 1.5", 2.9"
 - Sphere diameter: 6.29"
 
+![Home Screen](../res/Home%20Screen.png)
+![Lumen Measurement](../res/Lumen%20Measurement.png)
+![Candela Measurement](../res/Candela%20Measurement.png)
+![Data Plotting and Logging](../res/Data%20Plotting%20and%20Logging.png)
+![Data Transfer](../res/Data%20Transfer.png)
+![Settings](../res/Settings.png)
+
 
 
 
