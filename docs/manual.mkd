@@ -56,3 +56,4 @@ Select cd/lux multiples in settings based on estimated value:
 ![Data Transfer](../res/Data%20Transfer.png)
 ![Settings](../res/Settings.png)
 
+© 2024 TKlamp
