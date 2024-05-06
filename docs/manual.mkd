@@ -27,7 +27,7 @@ Select candela/lux multiples in settings based on estimated value:
 ### Lux Measurement
 - Lux measurement range: 1-10m
 - External lux sensor cable length: 2m
-- Lux sensor extesion cable length: 10m (Not included. Can be purchased separately) 
+- Lux sensor extension cable length: 10m (Not included. Can be purchased separately) 
 
 ### Data Logging and Transfer
 - Data length: 3620 bytes
@@ -54,10 +54,4 @@ Select candela/lux multiples in settings based on estimated value:
 ![Data Plotting and Logging](../res/Data%20Plotting%20and%20Logging.png)
 ![Data Transfer](../res/Data%20Transfer.png)
 ![Settings](../res/Settings.png)
-
-
-
-
-
-
 
