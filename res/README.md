@@ -1,1 +1,1 @@
-images
+&copy; TKlamp 
