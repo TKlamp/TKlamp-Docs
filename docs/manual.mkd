@@ -7,32 +7,32 @@
 
 ### Resolution
 - Live reading and plotting: 1lm/1cd/1lux
-- Data logging: 1lm. cd and lux x1/x10/x100.  
+- Data logging: 1lm. cd and lux x1/x10/x100
 
-Select cd/lux multiples in settings based on estimated value:
+Select cd/lux multiplier in settings based on estimated value:
 - cd/lux < 65,535:  select x1. (Max value: 65,535. Resolution 1 cd/lux)
 - 65,535 ≤ cd/lux < 655,350: select x10 resolution (Max value: 655,350. Resolution 10 cd/lux )
 - cd/lux ≥ 655,350: select x100 resolution (Max value: 6,553,500. Resolution 100 cd/lux)
 
-> This is because log data is stored and transferred in 2 bytes, which can only save up to 65,535 in value.
+> This is because log data is stored and transferred in 2 bytes, which can only represent up to 65,535 in value.
 
 ### Live Plotting
-- Lumen/Candela/Lux each has 600 sampling data points. 
+- Lumen/Candela/Lux each has 600 sampling data points 
 - Sampling time: adjustable between 0.2s - 60.0s
 - Maximum logging time: 600 mins (10 hrs)
 
 ### Measurement sampling time interval
-- Measurement sampling time interval: 150ms.
+- Measurement sampling time interval: 150ms
 - Sampling rate: ~6.6 times per second.
 
-### Lux Measurement
-- Lux measurement range: 1-10m
-- External lux sensor cable length: 2m
-- Lux sensor extension cable length: 10m (Not included. Can be purchased separately) 
+### Lux and Candela Measurement
+- Distance to surface range: 1-10m
+- External sensor cable length: 2m
+- External sensor extension cable length: 10m (Not included. Can be purchased separately) 
 
 ### Data Logging and Transfer
 - Data length: 3620 bytes
-- Data transfer time: around 5s
+- Data transfer time: approx. 5s
 - Cmmunication interface: RS485 USB
 
 ### Timer
