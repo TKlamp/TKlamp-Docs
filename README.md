@@ -2,7 +2,7 @@
 
 TKlamp Lighting Testers are ingetrating sphere meters designed to measure lumen and lux values. The TK2303E model offers data logging capabilities, allowing transfer of measurements to a PC for further analysis.
 
-This repository contains a quickstart guide to exporting data,a detailed user manual and serial data specifications. 
+This repository contains a quickstart guide to exporting data from TK2303E,a detailed user manual and serial data specifications. 
 
 If you are instead looking for:
 
