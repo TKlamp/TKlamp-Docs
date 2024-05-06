@@ -1,13 +1,13 @@
-# Raw Serial Data Reference 
+# Serial Data Reference 
 
 > This reference is created for decoding raw serial data read directly from USB serial port or 3rd party application such as CoolTerm.
 
-To see a sample raw serial data output, click [here](https://github.com/TKlamp/TKlamp-Protocol/blob/main/docs/raw_serial_data_example.txt). The same data is used for the examples below. 
+To see a sample serial data output, click [here](https://github.com/TKlamp/TKlamp-Protocol/blob/main/docs/raw_serial_data_example.txt). This same data is used in the examples below. 
 
-Total length: 3620 byte. 
+Total length: **3620 byte** 
 - Header: 1-16 byte 
 - Body: 17-3616 byte 
-- Endding: 3616-3620 byte
+- Ending: 3616-3620 byte
 
 ### Header 
 <table>
@@ -70,9 +70,9 @@ Total length: 3620 byte.
 </table>
 
 
-- TK2303 tester can take 600 max sample points. Each sample point consists of 2 bytes.
-- Lumen, Lux and Candela each has 1200 bytes data total. 
-- Data persist time ascending order.
+- TK2303D tester can take 600 sample points. Each sample point consists of 2 bytes.
+- Lumen, Lux and Candela each has 600 * 2 = 1200 bytes data total. 
+- Data persists time ascending order.
 
 ### Ending 
 <table>
