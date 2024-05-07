@@ -1,4 +1,4 @@
-## Specifications
+## TK2303D Specifications
 
 ### Measurements & Range
 - Luminous flux. Range: 0-25,000 lm
