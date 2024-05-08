@@ -30,7 +30,7 @@ Select cd/lux multiplier in settings based on estimated value:
 - External sensor cable length: 2m
 - External sensor extension cable length: 10m (Not included. Can be purchased separately)
 
-## Wavelenght 
+## Wavelength 
 - Range: 450-650nm (Not for UV/IR light) 
 
 ### Data Logging and Transfer
