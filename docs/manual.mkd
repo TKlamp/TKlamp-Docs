@@ -28,7 +28,10 @@ Select cd/lux multiplier in settings based on estimated value:
 ### Lux and Candela Measurement
 - Distance to surface range: 1-10m
 - External sensor cable length: 2m
-- External sensor extension cable length: 10m (Not included. Can be purchased separately) 
+- External sensor extension cable length: 10m (Not included. Can be purchased separately)
+
+## Wavelenght 
+- Range: 450-650nm (Not for UV/IR light) 
 
 ### Data Logging and Transfer
 - Data length: 3620 bytes
