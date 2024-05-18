@@ -3,7 +3,7 @@
 ### Measurements & Range
 - Luminous flux. Range: 0-25,000 lm
 - Luminous intensity. Range: 0-6,500,000 cd 
-- Illuminance. Range: 0~250,000 lux 
+- Illuminance. Range: 0-250,000 lux 
 
 ### Resolution
 - Live reading and plotting: 1lm/1cd/1lux
