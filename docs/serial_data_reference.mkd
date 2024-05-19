@@ -64,8 +64,8 @@ Total length: **3620 byte**
   <tr>
     <th>Explanation</th>
     <td>Lumen (each data point is 2 bytes) </td>
-    <td>Lux (each data point is 2 bytes) </td>
     <td>Candela (each data point is 2 bytes) </td>
+    <td>Lux (each data point is 2 bytes) </td>
   </tr>
 </table>
 
