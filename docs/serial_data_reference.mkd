@@ -4,10 +4,10 @@
 
 To see a sample serial data output, click [here](https://github.com/TKlamp/TKlamp-Protocol/blob/main/docs/raw_serial_data_example.txt). The same data is used in the examples below. 
 
-Total length: **3620 byte** 
-- Header: 1-16 byte 
-- Body: 17-3616 byte 
-- Ending: 3616-3620 byte
+Total length: **3620 bytes** 
+- Header: 1-16 bytes 
+- Body: 17-3616 bytes 
+- Ending: 3616-3620 bytes
 
 ### Header 
 <table>
