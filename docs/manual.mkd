@@ -21,8 +21,8 @@ Select cd/lux multiplier in settings based on estimated value:
 - Sampling time: adjustable between 0.2s - 60.0s
 - Maximum logging time: 600 mins (10 hrs)
 
-### Measurement sampling time interval
-- Measurement sampling time interval: 150ms
+### Sensor sampling time interval
+- Sensor sampling time interval: 150ms
 - Sampling rate: ~6.6 times per second.
 
 ### Lux and Candela Measurement
