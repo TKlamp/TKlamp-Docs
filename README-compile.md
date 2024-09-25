@@ -42,7 +42,7 @@ HTML and PDF, and improves various quality of life features.
 ### PDF
 
 ```bash
-export REPO=class101
+export REPO=TKlamp
 sed -E -i 's#\(docs/manual\.md\)#(https://github.com/'"$REPO"'/TKlamp-Docs/blob/main/docs/manual.md)#g' README.md
 sed -E -i 's#\(docs/serial_data_reference\.md\)#(https://github.com/'"$REPO"'/TKlamp-Docs/blob/main/docs/serial_data_reference.md)#g' README.md
 pandoc README.md \
@@ -65,7 +65,7 @@ sed -E -i 's#\(https://github.com/'"$REPO"'/TKlamp-Docs/blob/main/docs/manual\.m
 - --css=styling-killercup.css \
 
 ```bash
-export REPO=class101
+export REPO=TKlamp
 sed -E -i 's#\(docs/manual\.md\)#(https://github.com/'"$REPO"'/TKlamp-Docs/blob/main/docs/manual.md)#g' README.md
 sed -E -i 's#\(docs/serial_data_reference\.md\)#(https://github.com/'"$REPO"'/TKlamp-Docs/blob/main/docs/serial_data_reference.md)#g' README.md
 sed -E -i 's#\.\./res/([^)]+)#https://github.com/'"$REPO"'/TKlamp-Docs/blob/main/res/\1?raw=true#g' docs/manual.md
@@ -90,7 +90,7 @@ sed -E -i 's#\(https://github.com/'"$REPO"'/TKlamp-Docs/blob/main/docs/manual\.m
 ### DOC
 
 ```bash
-export REPO=class101
+export REPO=TKlamp
 sed -E -i 's#\(docs/manual\.md\)#(https://github.com/'"$REPO"'/TKlamp-Docs/blob/main/docs/manual.md)#g' README.md
 sed -E -i 's#\(docs/serial_data_reference\.md\)#(https://github.com/'"$REPO"'/TKlamp-Docs/blob/main/docs/serial_data_reference.md)#g' README.md
 pandoc README.md \
