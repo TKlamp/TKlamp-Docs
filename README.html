@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="© 2024 TKlamp" />
+  <meta name="dcterms.date" content="2024-09-25" />
+  <meta name="keywords" content="Flashlight, Tester" />
+  <title>TKlamp TK2303D User Manual</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="styling-benjam.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">TKlamp TK2303D User Manual</h1>
+<p class="author">© 2024 TKlamp</p>
+<p class="date">2024-09-25</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#tklamp-lighting-tester-docs"
+id="toc-tklamp-lighting-tester-docs">TKlamp Lighting Tester Docs</a>
+<ul>
+<li><a href="#documentations"
+id="toc-documentations">Documentations</a></li>
+<li><a href="#contributing" id="toc-contributing">Contributing</a></li>
+</ul></li>
+<li><a href="#tk2303d-specifications"
+id="toc-tk2303d-specifications">TK2303D Specifications</a>
+<ul>
+<li><a href="#table-of-content" id="toc-table-of-content">Table of
+Content</a></li>
+<li><a href="#measurements-range"
+id="toc-measurements-range">Measurements &amp; Range</a></li>
+<li><a href="#resolution" id="toc-resolution">Resolution</a></li>
+<li><a href="#live-plotting" id="toc-live-plotting">Live
+Plotting</a></li>
+<li><a href="#sensor-sampling-time-interval"
+id="toc-sensor-sampling-time-interval">Sensor sampling time
+interval</a></li>
+<li><a href="#lux-and-candela-measurement"
+id="toc-lux-and-candela-measurement">Lux and Candela
+Measurement</a></li>
+<li><a href="#wavelength" id="toc-wavelength">Wavelength</a></li>
+<li><a href="#data-logging-and-transfer"
+id="toc-data-logging-and-transfer">Data Logging and Transfer</a></li>
+<li><a href="#timer" id="toc-timer">Timer</a></li>
+<li><a href="#power-supply" id="toc-power-supply">Power Supply</a></li>
+<li><a href="#dimensions" id="toc-dimensions">Dimensions</a></li>
+</ul></li>
+<li><a href="#serial-data-reference"
+id="toc-serial-data-reference">Serial Data Reference</a>
+<ul>
+<li><a href="#table-of-content-1" id="toc-table-of-content-1">Table of
+Content</a></li>
+<li><a href="#header" id="toc-header">Header</a></li>
+<li><a href="#body" id="toc-body">Body</a></li>
+<li><a href="#ending" id="toc-ending">Ending</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="tklamp-lighting-tester-docs">TKlamp Lighting Tester Docs</h1>
+<p>TKlamp Flashlight Tester is a specialized lighting meter designed to
+measure lumen, candela and lux values of flashlights.</p>
+<p>The TK2303D model offers data logging capabilities, allowing users to
+transfer measurement data to a PC for further analysis. This repository
+contains a quickstart guide to exporting data from TK2303D, a detailed
+user manual and serial data specifications.</p>
+<p>If you are instead looking for:</p>
+<p>TKlamp Lighting Testers, visit <a
+href="https://tklamp.co">website</a>.</p>
+<p>Purchasing TKlamp Tester, visit <a
+href="https://www.tklamp.co/order-online">online store</a>.</p>
+<h2 id="documentations">Documentations</h2>
+<ol type="1">
+<li><a href="https://github.com/TKlamp/Data-Logging-Tutorial">Data
+Logging Tutorial</a> - Quickstart guide to exporting data to PC</li>
+<li><a
+href="https://github.com/class101/TKlamp-Docs/blob/main/docs/manual.md">User
+Manual</a></li>
+<li><a
+href="https://github.com/class101/TKlamp-Docs/blob/main/docs/serial_data_reference.md">Serial
+Data Specifications</a> - How to interprent raw serial data from UBS
+serial port</li>
+</ol>
+<h2 id="contributing">Contributing</h2>
+<p>To make contributions, join <a
+href="https://discord.gg/xVy4j9JcYx">Discord</a>.</p>
+<p>To suggest any changes in the repos, use pull request or Discord.</p>
+<h1 id="tk2303d-specifications">TK2303D Specifications</h1>
+<h2 id="table-of-content">Table of Content</h2>
+<!-- MarkdownTOC -->
+<ul>
+<li><a href="#measurements--range">Measurements &amp; Range</a></li>
+<li><a href="#resolution">Resolution</a></li>
+<li><a href="#live-plotting">Live Plotting</a></li>
+<li><a href="#sensor-sampling-time-interval">Sensor sampling time
+interval</a></li>
+<li><a href="#lux-and-candela-measurement">Lux and Candela
+Measurement</a></li>
+<li><a href="#wavelength">Wavelength</a></li>
+<li><a href="#data-logging-and-transfer">Data Logging and
+Transfer</a></li>
+<li><a href="#timer">Timer</a></li>
+<li><a href="#power-supply">Power Supply</a></li>
+<li><a href="#dimensions">Dimensions</a></li>
+</ul>
+<!-- /MarkdownTOC -->
+<h2 id="measurements-range">Measurements &amp; Range</h2>
+<ul>
+<li>Luminous flux. Range: 0-25,000 lm</li>
+<li>Luminous intensity. Range: 0-6,500,000 cd</li>
+<li>Illuminance. Range: 0-250,000 lux</li>
+</ul>
+<h2 id="resolution">Resolution</h2>
+<ul>
+<li>Live reading and plotting: 1lm/1cd/1lux</li>
+<li>Data logging: 1lm. cd and lux x1/x10/x100</li>
+</ul>
+<p>Select cd/lux multiplier in settings based on estimated value:</p>
+<ul>
+<li>cd/lux &lt; 65,535: select x1. (Max value: 65,535. Resolution 1
+cd/lux)</li>
+<li>65,535 &lt;= cd/lux &lt; 655,350: select x10 resolution (Max value:
+655,350. Resolution 10 cd/lux )</li>
+<li>cd/lux &gt;= 655,350: select x100 resolution (Max value: 6,553,500.
+Resolution 100 cd/lux)</li>
+</ul>
+<blockquote>
+<p>This is because log data is stored and transferred in 2 bytes, which
+can only represent up to 65,535 in value.</p>
+</blockquote>
+<h2 id="live-plotting">Live Plotting</h2>
+<ul>
+<li>Lumen/Candela/Lux each has 600 sampling data points</li>
+<li>Sampling time: adjustable between 0.2s - 60.0s</li>
+<li>Maximum logging time: 600 mins (10 hrs)</li>
+</ul>
+<h2 id="sensor-sampling-time-interval">Sensor sampling time
+interval</h2>
+<ul>
+<li>Sensor sampling time interval: 150ms</li>
+<li>Sampling rate: ~6.6 times per second.</li>
+</ul>
+<h2 id="lux-and-candela-measurement">Lux and Candela Measurement</h2>
+<ul>
+<li>Distance to surface range: 1-10m</li>
+<li>External sensor cable length: 2m</li>
+<li>External sensor extension cable length: 10m (Not included. Can be
+purchased separately)</li>
+</ul>
+<h2 id="wavelength">Wavelength</h2>
+<ul>
+<li>Range: 450-650nm (Not for UV/IR light)</li>
+</ul>
+<h2 id="data-logging-and-transfer">Data Logging and Transfer</h2>
+<ul>
+<li>Data length: 3620 bytes</li>
+<li>Data transfer time: approx. 5s</li>
+<li>Cmmunication interface: RS485 USB</li>
+</ul>
+<h2 id="timer">Timer</h2>
+<ul>
+<li>Up timer: up to 24 hours</li>
+<li>Down timer: 1-999 minutes</li>
+</ul>
+<h2 id="power-supply">Power Supply</h2>
+<ul>
+<li>Power consumption: &lt; 4w</li>
+<li>AC power/DC power</li>
+<li>AC power range: 90~240V</li>
+<li>DC power range: 5~24V</li>
+</ul>
+<h2 id="dimensions">Dimensions</h2>
+<ul>
+<li>Sphere openning sizes: 0.7”, 1.5”, 2.9”</li>
+<li>Sphere diameter: 6.29”</li>
+</ul>
+<p><img
+src="https://github.com/class101/TKlamp-Docs/blob/main/res/Home%20Screen.png?raw=true?raw=true?raw=true?raw=true"
+alt="Home Screen" /><br />
+<img
+src="https://github.com/class101/TKlamp-Docs/blob/main/res/Lumen%20Measurement.png?raw=true?raw=true?raw=true?raw=true"
+alt="Lumen Measurement" /><br />
+<img
+src="https://github.com/class101/TKlamp-Docs/blob/main/res/Candela%20Measurement.png?raw=true?raw=true?raw=true?raw=true"
+alt="Candela Measurement" /><br />
+<img
+src="https://github.com/class101/TKlamp-Docs/blob/main/res/Data%20Plotting%20and%20Logging.png?raw=true?raw=true?raw=true?raw=true"
+alt="Data Plotting and Logging" /><br />
+<img
+src="https://github.com/class101/TKlamp-Docs/blob/main/res/Data%20Transfer.png?raw=true?raw=true?raw=true?raw=true"
+alt="Data Transfer" /><br />
+<img
+src="https://github.com/class101/TKlamp-Docs/blob/main/res/Settings.png?raw=true?raw=true?raw=true?raw=true"
+alt="Settings" /></p>
+<h1 id="serial-data-reference">Serial Data Reference</h1>
+<blockquote>
+<p>This reference is created for decoding raw serial data read directly
+from USB serial port or 3rd party application such as CoolTerm.</p>
+</blockquote>
+<p>To see a sample serial data output, click <a
+href="https://github.com/TKlamp/TKlamp-Protocol/blob/main/docs/raw_serial_data_example.txt">here</a>.
+The same data is used in the examples below.</p>
+<p>Total length: <strong>3620 bytes</strong></p>
+<ul>
+<li>Header: 1-16 bytes</li>
+<li>Body: 17-3616 bytes</li>
+<li>Ending: 3616-3620 bytes</li>
+</ul>
+<h2 id="table-of-content-1">Table of Content</h2>
+<!-- MarkdownTOC -->
+<ul>
+<li><a href="#header">Header</a></li>
+<li><a href="#body">Body</a></li>
+<li><a href="#ending">Ending</a></li>
+</ul>
+<!-- /MarkdownTOC -->
+<h2 id="header">Header</h2>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode html"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">table</span><span class="dt">&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">th</span><span class="dt">&gt;</span>Byte position<span class="dt">&lt;/</span><span class="kw">th</span><span class="dt">&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>1-2<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>3-4<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>5-6<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>7-8<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>9-10<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>11-12<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>     <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>13-14<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>     <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>15-16<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">th</span><span class="dt">&gt;</span>Example data<span class="dt">&lt;/</span><span class="kw">th</span><span class="dt">&gt;</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>aa aa<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>0e 10<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>01 f4<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>00 64<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>00 01<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>00 01<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>00 01<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>56 44<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">th</span><span class="dt">&gt;</span>Explanation<span class="dt">&lt;/</span><span class="kw">th</span><span class="dt">&gt;</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>Start indicator<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>Data body length (3600 bytes fixed) <span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>Sampling time<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>Distance to surface<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>Lumen multiples<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>Candela multiples<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>Lux multiples<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>Version<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">table</span><span class="dt">&gt;</span></span></code></pre></div>
+<h2 id="body">Body</h2>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">table</span><span class="dt">&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">th</span><span class="dt">&gt;</span>Byte position<span class="dt">&lt;/</span><span class="kw">th</span><span class="dt">&gt;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>17-1216<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>1217-2416<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>2417-3616<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">th</span><span class="dt">&gt;</span>Example data<span class="dt">&lt;/</span><span class="kw">th</span><span class="dt">&gt;</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>44 00 .. .. 00 00 <span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>00 00 .. .. 00 00 <span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>75 00 .. .. 00 00<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">th</span><span class="dt">&gt;</span>Explanation<span class="dt">&lt;/</span><span class="kw">th</span><span class="dt">&gt;</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>Lumen (each data point is 2 bytes) <span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>Candela (each data point is 2 bytes) <span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>Lux (each data point is 2 bytes) <span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">table</span><span class="dt">&gt;</span></span></code></pre></div>
+<ul>
+<li>TK2303D tester can take 600 sample points. Each sample point
+consists of 2 bytes.</li>
+<li>Lumen, Lux and Candela each has 600 * 2 = 1200 bytes data
+total.</li>
+<li>Data persists time ascending order.</li>
+</ul>
+<h2 id="ending">Ending</h2>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode html"><code class="sourceCode html"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">table</span><span class="dt">&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">th</span><span class="dt">&gt;</span>Byte position<span class="dt">&lt;/</span><span class="kw">th</span><span class="dt">&gt;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>3617-3618<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>3619-3620<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">th</span><span class="dt">&gt;</span>Example data<span class="dt">&lt;/</span><span class="kw">th</span><span class="dt">&gt;</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>ee ee<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>1a b0<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">th</span><span class="dt">&gt;</span>Explanation<span class="dt">&lt;/</span><span class="kw">th</span><span class="dt">&gt;</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>Ending indicator <span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>No meaning<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">table</span><span class="dt">&gt;</span></span></code></pre></div>
+<p>© 2024 TKlamp</p>
+</body>
+</html>

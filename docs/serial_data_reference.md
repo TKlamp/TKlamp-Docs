@@ -1,15 +1,40 @@
-# Serial Data Reference 
+---
+title: "TKlamp TK2303D User Manual"
+author: © 2024 TKlamp
+date: "2024-09-25"
+keywords: [Flashlight, Tester]
+lang: "en"
+...
 
-> This reference is created for decoding raw serial data read directly from USB serial port or 3rd party application such as CoolTerm.
+# Serial Data Reference
 
-To see a sample serial data output, click [here](https://github.com/TKlamp/TKlamp-Protocol/blob/main/docs/raw_serial_data_example.txt). The same data is used in the examples below. 
+> This reference is created for decoding raw serial data read directly from
+USB serial port or 3rd party application such as CoolTerm.
 
-Total length: **3620 bytes** 
-- Header: 1-16 bytes 
-- Body: 17-3616 bytes 
+To see a sample serial data output, click
+[here](
+https://github.com/TKlamp/TKlamp-Protocol/blob/main/docs/raw_serial_data_example.txt
+). The same data is used in the examples below.
+
+Total length: **3620 bytes**
+
+- Header: 1-16 bytes
+- Body: 17-3616 bytes
 - Ending: 3616-3620 bytes
 
-### Header 
+## Table of Content
+
+<!-- MarkdownTOC -->
+
+- [Header](#header)
+- [Body](#body)
+- [Ending](#ending)
+
+<!-- /MarkdownTOC -->
+
+## Header
+
+```html
 <table>
   <tr>
     <th>Byte position</th>
@@ -45,9 +70,11 @@ Total length: **3620 bytes**
     <td>Version</td>
   </tr>
 </table>
+```
 
-### Body 
+## Body
 
+```html
 <table>
   <tr>
     <th>Byte position</th>
@@ -68,13 +95,15 @@ Total length: **3620 bytes**
     <td>Lux (each data point is 2 bytes) </td>
   </tr>
 </table>
-
+```
 
 - TK2303D tester can take 600 sample points. Each sample point consists of 2 bytes.
-- Lumen, Lux and Candela each has 600 * 2 = 1200 bytes data total. 
+- Lumen, Lux and Candela each has 600 * 2 = 1200 bytes data total.
 - Data persists time ascending order.
 
-### Ending 
+## Ending
+
+```html
 <table>
   <tr>
     <th>Byte position</th>
@@ -92,5 +121,6 @@ Total length: **3620 bytes**
     <td>No meaning</td>
   </tr>
 </table>
+```
 
 © 2024 TKlamp
