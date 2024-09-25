@@ -1,0 +1,99 @@
+---
+title: "TKlamp TK2303D User Manual"
+author: © 2024 TKlamp
+date: "2024-09-25"
+keywords: [Flashlight, Tester]
+lang: "en"
+...
+
+# TK2303D Specifications
+
+## Table of Content
+
+<!-- MarkdownTOC -->
+
+- [Measurements & Range](#measurements--range)
+- [Resolution](#resolution)
+- [Live Plotting](#live-plotting)
+- [Sensor sampling time interval](#sensor-sampling-time-interval)
+- [Lux and Candela Measurement](#lux-and-candela-measurement)
+- [Wavelength](#wavelength)
+- [Data Logging and Transfer](#data-logging-and-transfer)
+- [Timer](#timer)
+- [Power Supply](#power-supply)
+- [Dimensions](#dimensions)
+
+<!-- /MarkdownTOC -->
+
+## Measurements & Range
+
+- Luminous flux. Range: 0-25,000 lm
+- Luminous intensity. Range: 0-6,500,000 cd
+- Illuminance. Range: 0-250,000 lux
+
+## Resolution
+
+- Live reading and plotting: 1lm/1cd/1lux
+- Data logging: 1lm. cd and lux x1/x10/x100
+
+Select cd/lux multiplier in settings based on estimated value:
+
+- cd/lux < 65,535:  select x1. (Max value: 65,535. Resolution 1 cd/lux)
+- 65,535 <= cd/lux < 655,350: select x10 resolution (Max value: 655,350.
+Resolution 10 cd/lux )
+- cd/lux >= 655,350: select x100 resolution (Max value: 6,553,500.
+Resolution 100 cd/lux)
+
+> This is because log data is stored and transferred in 2 bytes, which can
+only represent up to 65,535 in value.
+
+## Live Plotting
+
+- Lumen/Candela/Lux each has 600 sampling data points
+- Sampling time: adjustable between 0.2s - 60.0s
+- Maximum logging time: 600 mins (10 hrs)
+
+## Sensor sampling time interval
+
+- Sensor sampling time interval: 150ms
+- Sampling rate: ~6.6 times per second.
+
+## Lux and Candela Measurement
+
+- Distance to surface range: 1-10m
+- External sensor cable length: 2m
+- External sensor extension cable length: 10m (Not included. Can be purchased separately)
+
+## Wavelength
+
+- Range: 450-650nm (Not for UV/IR light)
+
+## Data Logging and Transfer
+
+- Data length: 3620 bytes
+- Data transfer time: approx. 5s
+- Cmmunication interface: RS485 USB
+
+## Timer
+
+- Up timer: up to 24 hours
+- Down timer: 1-999 minutes  
+
+## Power Supply
+
+- Power consumption: < 4w
+- AC power/DC power
+- AC power range: 90~240V
+- DC power range: 5~24V
+
+## Dimensions
+
+- Sphere openning sizes: 0.7", 1.5", 2.9"
+- Sphere diameter: 6.29"
+
+![Home Screen](../res/Home%20Screen.png?raw=true?raw=true?raw=true?raw=true)  
+![Lumen Measurement](../res/Lumen%20Measurement.png?raw=true?raw=true?raw=true?raw=true)  
+![Candela Measurement](../res/Candela%20Measurement.png?raw=true?raw=true?raw=true?raw=true)  
+![Data Plotting and Logging](../res/Data%20Plotting%20and%20Logging.png?raw=true?raw=true?raw=true?raw=true)  
+![Data Transfer](../res/Data%20Transfer.png?raw=true?raw=true?raw=true?raw=true)  
+![Settings](../res/Settings.png?raw=true?raw=true?raw=true?raw=true)
