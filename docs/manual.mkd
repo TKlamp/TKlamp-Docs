@@ -1,7 +1,7 @@
 ## TK2303D Specifications
 
 ### Measurements & Range
-- Luminous flux. Range: 0-25,000 lm
+- Luminous flux. Range: 0-35,000 lm
 - Luminous intensity. Range: 0-6,500,000 cd 
 - Illuminance. Range: 0-250,000 lux 
 
