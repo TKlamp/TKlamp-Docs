@@ -8,7 +8,7 @@ If you are instead looking for:
 
 TKlamp Lighting Testers, visit [website](https://tklamp.co).
 
-Purchasing TKlamp Tester, visit [online store](https://www.tklamp.co/order-online).
+Purchasing TKlamp Tester, visit [online store](https://tklamp.co/collections/flashlight-testers/products/tklamp-flashlight-tester-tk2303d).
 
 ## Documentations
 
