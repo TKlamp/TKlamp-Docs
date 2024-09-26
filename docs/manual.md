@@ -91,9 +91,9 @@ only represent up to 65,535 in value.
 - Sphere openning sizes: 0.7", 1.5", 2.9"
 - Sphere diameter: 6.29"
 
-![Home Screen](../res/Home%20Screen.png?raw=true?raw=true?raw=true?raw=true)  
-![Lumen Measurement](../res/Lumen%20Measurement.png?raw=true?raw=true?raw=true?raw=true)  
-![Candela Measurement](../res/Candela%20Measurement.png?raw=true?raw=true?raw=true?raw=true)  
-![Data Plotting and Logging](../res/Data%20Plotting%20and%20Logging.png?raw=true?raw=true?raw=true?raw=true)  
-![Data Transfer](../res/Data%20Transfer.png?raw=true?raw=true?raw=true?raw=true)  
-![Settings](../res/Settings.png?raw=true?raw=true?raw=true?raw=true)
+![Home Screen](../res/Home%20Screen.png)  
+![Lumen Measurement](../res/Lumen%20Measurement.png)  
+![Candela Measurement](../res/Candela%20Measurement.png)  
+![Data Plotting and Logging](../res/Data%20Plotting%20and%20Logging.png)  
+![Data Transfer](../res/Data%20Transfer.png)  
+![Settings](../res/Settings.png)

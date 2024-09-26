@@ -82,7 +82,7 @@ docs/serial_data_reference.md \
 -f markdown -t html5 \
 --toc \
 -o README.html
-sed -E -i 's#https://github\.com/'"$REPO"'/TKlamp-Docs/blob/main/res/#../res/#g' docs/manual.md
+sed -E -i 's#https://github\.com/'"$REPO"'/TKlamp-Docs/blob/main/res/([^\?]+)\?raw=true#../res/\1#g' docs/manual.md
 sed -E -i 's#\(https://github.com/'"$REPO"'/TKlamp-Docs/blob/main/docs/serial_data_reference\.md\)#(docs/serial_data_reference.md)#g' README.md
 sed -E -i 's#\(https://github.com/'"$REPO"'/TKlamp-Docs/blob/main/docs/manual\.md\)#(docs/manual.md)#g' README.md
 ```
