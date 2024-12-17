@@ -49,7 +49,7 @@ Select cd/lux multiplier in settings based on estimated value:
 - DC power range: 5~24V
 
 ### Dimensions 
-- Sphere openning sizes: 0.7", 1.5", 2.9"
+- Sphere opening sizes: 0.7", 1.5", 2.9"
 - Sphere diameter: 6.29"
 
 ![Home Screen](../res/Home%20Screen.png)
