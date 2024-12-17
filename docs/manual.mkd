@@ -23,12 +23,12 @@ Select cd/lux multiplier in settings based on estimated value:
 
 ### Sensor sampling time interval
 - Sensor sampling time interval: 150ms
-- Sampling rate: ~6.6 times per second.
+- Sampling rate: ~6.6 times per second
 
 ### Lux and Candela Measurement
 - Distance to surface range: 1-10m
 - External sensor cable length: 2m
-- External sensor extension cable length: 10m (Not included. Can be purchased separately)
+- External sensor extension cable length: 10m (Not included)
 
 ## Wavelength 
 - Range: 450-650nm (Not for UV/IR light) 
