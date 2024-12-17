@@ -14,7 +14,7 @@ Select cd/lux multiplier in settings based on estimated value:
 - 65,535 ≤ cd/lux < 655,350: select x10 resolution (Max value: 655,350. Resolution 10 cd/lux )
 - cd/lux ≥ 655,350: select x100 resolution (Max value: 6,553,500. Resolution 100 cd/lux)
 
-> This is because log data is stored and transferred in 2 bytes, which can only represent up to 65,535 in value.
+> Log data is stored and transferred in 2 bytes, which can only represent up to 65,535 in value.
 
 ### Live Plotting
 - Lumen/Candela/Lux each has 600 sampling data points 
